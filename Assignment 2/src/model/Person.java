@@ -20,7 +20,7 @@ public class Person {
                 public String street;
                 public String city;
                 public long phone;
-                public int unit; 
+                public short unit; 
                 public int zip;
                 public String state;
 
@@ -49,7 +49,7 @@ public class Person {
                     return unit;
                 }
 
-                public void setUnit(int unit) {
+                public void setUnit(short unit) {
                     this.unit = unit;
                 }
 
@@ -170,7 +170,7 @@ public class Person {
         return homeAddress;
     }
 
-    public void setHomeAddress(String street, String state, int zip, String city, int unit, long phone) {
+    public void setHomeAddress(String street, String state, int zip, String city, short unit, long phone) {
         this.homeAddress.setStreet(street);
         this.homeAddress.setCity(city);
         this.homeAddress.setState(state);
