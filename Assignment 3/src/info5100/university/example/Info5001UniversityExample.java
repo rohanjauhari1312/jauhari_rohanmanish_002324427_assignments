@@ -179,21 +179,21 @@ public class Info5001UniversityExample {
 
         SeatAssignment sa12 = courseload2.newSeatAssignment(courseoffer3);
 
-        SeatAssignment sa13 = courseload3.newSeatAssignment(courseoffer4);
+        courseload3.newSeatAssignment(courseoffer4);
 
-        SeatAssignment sa14 = courseload4.newSeatAssignment(courseoffer5);
+        courseload4.newSeatAssignment(courseoffer5);
 
-        SeatAssignment sa15 = courseload5.newSeatAssignment(courseoffer6);
+        courseload5.newSeatAssignment(courseoffer6);
 
-        SeatAssignment sa16 = courseload6.newSeatAssignment(courseoffer4);
+        courseload6.newSeatAssignment(courseoffer4);
 
-        SeatAssignment sa17 = courseload7.newSeatAssignment(courseoffer2);
+        courseload7.newSeatAssignment(courseoffer2);
 
-        SeatAssignment sa18 = courseload8.newSeatAssignment(courseoffer1);
+        courseload8.newSeatAssignment(courseoffer1);
 
-        SeatAssignment sa19 = courseload9.newSeatAssignment(courseoffer3);
+        courseload9.newSeatAssignment(courseoffer3);
 
-        SeatAssignment sa20 = courseload10.newSeatAssignment(courseoffer4);
+        courseload10.newSeatAssignment(courseoffer4);
         System.out.println("Courses:");
         for (int i=0;i<coursecatalog.getCourseList().size();i++){
             Course c = coursecatalog.getCourseList().get(i);
