@@ -56,7 +56,7 @@ public class Info5001UniversityExample {
         d.addElectiveCourse(c7);
         d.addElectiveCourse(c8);
         //Creating course/class schedules
-        CourseSchedule courseschedule = department.newCourseSchedule("Fall 2024");
+        CourseSchedule courseschedule = department.newCourseSchedule("Spring 2024");
 
         CourseOffer courseoffer1 = courseschedule.newCourseOffer("info 5100");
         if (courseoffer1==null)return;
@@ -222,6 +222,9 @@ public class Info5001UniversityExample {
             System.out.println("Total tuition fees: "+fees);
             System.out.println("\n");
         }
+            int total = department.calculateRevenuesBySemester("Spring 2024");
+            System.out.println("Total Revenue for the Department is :  " + total+"    ");
+    
 
     }
 
