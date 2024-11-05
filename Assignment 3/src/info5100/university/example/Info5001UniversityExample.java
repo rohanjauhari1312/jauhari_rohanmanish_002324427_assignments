@@ -128,56 +128,56 @@ public class Info5001UniversityExample {
 
         StudentProfile sp1 = sd.newStudentProfile (s1) ;
         CourseLoad courseload1 = sp1. newCourseLoad (  "Spring 2024") ;
-        SeatAssignment sa1 = courseload1.newSeatAssignment(courseoffer1); 
+         courseload1.newSeatAssignment(courseoffer1); 
         
         Person s2 = pd.newPerson("s2");
         StudentProfile sp2 = sd.newStudentProfile(s2);
         CourseLoad courseload2 = sp2.newCourseLoad("Spring 2024");
-        SeatAssignment sa2 = courseload2.newSeatAssignment(courseoffer5);
+        courseload2.newSeatAssignment(courseoffer5);
 
         Person s3 = pd.newPerson("s3");
         StudentProfile sp3 = sd.newStudentProfile(s3);
         CourseLoad courseload3 = sp3.newCourseLoad("Spring 2024");
-        SeatAssignment sa3 = courseload3.newSeatAssignment(courseoffer2);
+        courseload3.newSeatAssignment(courseoffer2);
 
         Person s4 = pd.newPerson("s4");
         StudentProfile sp4 = sd.newStudentProfile(s4);
         CourseLoad courseload4 = sp4.newCourseLoad("Spring 2024");
-        SeatAssignment sa4 = courseload4.newSeatAssignment(courseoffer3);
+        courseload4.newSeatAssignment(courseoffer3);
 
         Person s5 = pd.newPerson("s5");
         StudentProfile sp5 = sd.newStudentProfile(s5);
         CourseLoad courseload5 = sp5.newCourseLoad("Spring 2024");
-        SeatAssignment sa5 = courseload5.newSeatAssignment(courseoffer4);
+        courseload5.newSeatAssignment(courseoffer4);
 
         Person s6 = pd.newPerson("s6");
         StudentProfile sp6 = sd.newStudentProfile(s6);
         CourseLoad courseload6 = sp6.newCourseLoad("Spring 2024");
-        SeatAssignment sa6 = courseload6.newSeatAssignment(courseoffer5);
+        courseload6.newSeatAssignment(courseoffer5);
 
         Person s7 = pd.newPerson("s7");
         StudentProfile sp7 = sd.newStudentProfile(s7);
         CourseLoad courseload7 = sp7.newCourseLoad("Spring 2024");
-        SeatAssignment sa7 = courseload7.newSeatAssignment(courseoffer6);
+        courseload7.newSeatAssignment(courseoffer6);
 
         Person s8 = pd.newPerson("s8");
         StudentProfile sp8 = sd.newStudentProfile(s8);
         CourseLoad courseload8 = sp8.newCourseLoad("Spring 2024");
-        SeatAssignment sa8 = courseload8.newSeatAssignment(courseoffer6);
+        courseload8.newSeatAssignment(courseoffer6);
 
         Person s9 = pd.newPerson("s9");
         StudentProfile sp9 = sd.newStudentProfile(s9);
         CourseLoad courseload9 = sp9.newCourseLoad("Spring 2024");
-        SeatAssignment sa9 = courseload9.newSeatAssignment(courseoffer5);
+        courseload9.newSeatAssignment(courseoffer5);
 
         Person s10 = pd.newPerson("s10");
         StudentProfile sp10 = sd.newStudentProfile(s10);
         CourseLoad courseload10 = sp10.newCourseLoad("Spring 2024");
-        SeatAssignment sa10 = courseload10.newSeatAssignment(courseoffer1);
+        courseload10.newSeatAssignment(courseoffer1);
 
-        SeatAssignment sa11 = courseload1.newSeatAssignment(courseoffer2);
+        courseload1.newSeatAssignment(courseoffer2);
 
-        SeatAssignment sa12 = courseload2.newSeatAssignment(courseoffer3);
+        courseload2.newSeatAssignment(courseoffer3);
 
         courseload3.newSeatAssignment(courseoffer4);
 
