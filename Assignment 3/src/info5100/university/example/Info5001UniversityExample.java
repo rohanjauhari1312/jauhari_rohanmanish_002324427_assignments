@@ -10,7 +10,6 @@ import info5100.university.example.CourseCatalog.CourseCatalog;
 import info5100.university.example.CourseSchedule.CourseLoad;
 import info5100.university.example.CourseSchedule.CourseOffer;
 import info5100.university.example.CourseSchedule.CourseSchedule;
-import info5100.university.example.CourseSchedule.SeatAssignment;
 import info5100.university.example.Degree.Degree;
 import info5100.university.example.Department.Department;
 import info5100.university.example.Persona.Faculty.FacultyAssignment;
@@ -223,7 +222,7 @@ public class Info5001UniversityExample {
             System.out.println("\n");
         }
             int total = department.calculateRevenuesBySemester("Spring 2024");
-            System.out.println("Total Revenue for the Department is :  " + total+"    ");
+            System.out.println("Total Revenue for the Department in Spring 2024 is " + total+"    ");
     
 
     }
