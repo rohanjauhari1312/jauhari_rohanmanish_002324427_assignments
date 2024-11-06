@@ -197,7 +197,7 @@ public class Info5001UniversityExample {
         System.out.println("Courses:");
         for (int i=0;i<coursecatalog.getCourseList().size();i++){
             Course c = coursecatalog.getCourseList().get(i);
-            System.out.println(c.getCOurseName()+" ("+c.getCOurseNumber()+"), credits="+c.getCredits()+", price/credit="+c.getCoursePrice());
+            System.out.println("* "+c.getCOurseName()+" ("+c.getCOurseNumber()+"), credits="+c.getCredits()+", price/credit="+c.getCoursePrice());
         }
         System.out.println("\n");
         for (int i=0;i<sd.studentlist.size();i++){
@@ -206,12 +206,12 @@ public class Info5001UniversityExample {
             for (int j=0;j<sd.studentlist.get(i).getCurrentCourseLoad().getSeatAssignments().size();j++){ 
                 CourseOffer co = sd.studentlist.get(i).getCurrentCourseLoad().getSeatAssignments().get(j).getCourseOffer();
                 System.out.println("Course: "+co.getSubjectCourse().getCOurseName()+" ("+co.getCourseNumber()+")");
-                System.out.println("Teacher: "+fac_cou_map.get(co).get(0).getFacultyProfile().person.getPersonId());
+                System.out.println("- Teacher: "+fac_cou_map.get(co).get(0).getFacultyProfile().person.getPersonId());
                 
                 double grade = Math.round((3.0 + Math.random()) * 10.0) / 10.0;
                 sd.studentlist.get(i).getCurrentCourseLoad().getSeatAssignments().get(j).grade=(float) grade;
-                System.out.println("Grade: "+grade);
-                System.out.println("Credits: "+sd.studentlist.get(i).getCurrentCourseLoad().getSeatAssignments().get(j).getSeat().getCourseOffer().getCreditHours());
+                System.out.println("- Grade: "+grade);
+                System.out.println("- Credits: "+sd.studentlist.get(i).getCurrentCourseLoad().getSeatAssignments().get(j).getSeat().getCourseOffer().getCreditHours());
                 int credits=sd.studentlist.get(i).getCurrentCourseLoad().getSeatAssignments().get(j).getSeat().getCourseOffer().getCreditHours();;
                 int price = sd.studentlist.get(i).getCurrentCourseLoad().getSeatAssignments().get(j).getSeat().getCourseOffer().getSubjectCourse().getCoursePrice();
                 fees=fees+credits*price;
