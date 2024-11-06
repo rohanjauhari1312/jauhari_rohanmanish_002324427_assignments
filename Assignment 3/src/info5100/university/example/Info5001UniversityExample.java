@@ -65,19 +65,19 @@ public class Info5001UniversityExample {
         if (co2==null)return;
         co2.generatSeats(5);
         
-        CourseOffer co3 = cs.newCourseOffer("damg 6210");
+        CourseOffer co3 = cs.newCourseOffer("damg 6310");
         if (co3==null)return;
         co3.generatSeats(5);
         
-        CourseOffer co4 = cs.newCourseOffer("info 6000");
+        CourseOffer co4 = cs.newCourseOffer("info 6030");
         if (co4==null)return;
         co4.generatSeats(5);
         
-        CourseOffer co5 = cs.newCourseOffer("info 5102");
+        CourseOffer co5 = cs.newCourseOffer("info 5002");
         if (co5==null)return;
         co5.generatSeats(5);
         
-        CourseOffer co6 = cs.newCourseOffer("info 5103");
+        CourseOffer co6 = cs.newCourseOffer("cyse 5102");
         if (co6==null)return;
         co6.generatSeats(5);
         HashMap<CourseOffer,ArrayList<FacultyAssignment>> fac_cou_map = new HashMap<>();
@@ -127,52 +127,62 @@ public class Info5001UniversityExample {
 
         StudentProfile sp1 = sd.newStudentProfile (s1) ;
         CourseLoad cl1 = sp1. newCourseLoad (  "Spring 2024") ;
-         cl1.newSeatAssignment(co1); 
+         
         
         Person s2 = pd.newPerson("s2");
         StudentProfile sp2 = sd.newStudentProfile(s2);
         CourseLoad cl2 = sp2.newCourseLoad("Spring 2024");
-        cl2.newSeatAssignment(co5);
+        
 
         Person s3 = pd.newPerson("s3");
         StudentProfile sp3 = sd.newStudentProfile(s3);
         CourseLoad cl3 = sp3.newCourseLoad("Spring 2024");
-        cl3.newSeatAssignment(co2);
+        
 
         Person s4 = pd.newPerson("s4");
         StudentProfile sp4 = sd.newStudentProfile(s4);
         CourseLoad cl4 = sp4.newCourseLoad("Spring 2024");
-        cl4.newSeatAssignment(co3);
+        
 
         Person s5 = pd.newPerson("s5");
         StudentProfile sp5 = sd.newStudentProfile(s5);
         CourseLoad cl5 = sp5.newCourseLoad("Spring 2024");
-        cl5.newSeatAssignment(co4);
+        
 
         Person s6 = pd.newPerson("s6");
         StudentProfile sp6 = sd.newStudentProfile(s6);
         CourseLoad cl6 = sp6.newCourseLoad("Spring 2024");
-        cl6.newSeatAssignment(co5);
+        
 
         Person s7 = pd.newPerson("s7");
         StudentProfile sp7 = sd.newStudentProfile(s7);
         CourseLoad cl7 = sp7.newCourseLoad("Spring 2024");
-        cl7.newSeatAssignment(co6);
+        
 
         Person s8 = pd.newPerson("s8");
         StudentProfile sp8 = sd.newStudentProfile(s8);
         CourseLoad cl8 = sp8.newCourseLoad("Spring 2024");
-        cl8.newSeatAssignment(co6);
+        
 
         Person s9 = pd.newPerson("s9");
         StudentProfile sp9 = sd.newStudentProfile(s9);
         CourseLoad cl9 = sp9.newCourseLoad("Spring 2024");
-        cl9.newSeatAssignment(co5);
+        
 
         Person s10 = pd.newPerson("s10");
         StudentProfile sp10 = sd.newStudentProfile(s10);
         CourseLoad cl10 = sp10.newCourseLoad("Spring 2024");
         
+        //20 student registrations
+        cl1.newSeatAssignment(co1); 
+        cl2.newSeatAssignment(co5);
+        cl3.newSeatAssignment(co2);
+        cl4.newSeatAssignment(co3);
+        cl5.newSeatAssignment(co4);
+        cl6.newSeatAssignment(co5);
+        cl7.newSeatAssignment(co6);
+        cl8.newSeatAssignment(co6);
+        cl9.newSeatAssignment(co5);
         cl10.newSeatAssignment(co1);
         cl1.newSeatAssignment(co2);
         cl2.newSeatAssignment(co3);
